@@ -1,6 +1,6 @@
 import React from 'react'
 import {createBrowserRouter, Outlet} from "react-router-dom"
-import App from '../App.jsx'
+import HomePage from '../HomePage.jsx'
 import Footer from "../layout/Footer.jsx"
 import Navbar from "../components/Navbar.jsx";
 import Main from '../layout/Main.jsx';
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
     children:[
         {
           path:"/",
-          element: <App/>
+          element: <HomePage/>
         },
         {
           path:"/flat",
