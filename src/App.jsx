@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/NavBar.jsx';
+import Navbar from './components/Navbar.jsx';
 import "./App.css"
 import Banner from './components/Banner.jsx';
 import AppartGrid from './components/AppartGrid.jsx';
