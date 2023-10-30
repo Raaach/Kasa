@@ -1,53 +1,40 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import {createBrowserRouter, Outlet} from "react-router-dom"
 import App from '../App.jsx'
-import Footer from "../components/Footer.jsx"
+import Footer from "../layout/Footer.jsx"
 import Navbar from "../components/Navbar.jsx";
+import Main from '../layout/Main.jsx';
 
+const HeaderFooterLayout =() =>{ //ici nous avons créé un model pour chaque pages
+  return<>  
+    <Navbar/>
+    <Main>
+      <Outlet/>
+    </Main>
+    <Footer/>
+  </>
+}
 
-export const router = createBrowserRouter(
-  [
-    {
-      path:"/",
-      element: <App/>,
-    },
-    {
-        path:"/",
-        elelement:(
-            <>
-                <Navbar/>
-                <App/>
-                <Footer/>
-            </>
-        ),
-    },
-    {
-        path:"/flat",
-        element: (
-        <>
-            <Navbar/>
-            <h1>Nos apartements</h1>
-            <Footer/>
-        </>
-        )
-    },
-    {
-        path:"/about",
-        element: (
-        <>
-            <Navbar/>
-            <h1>À propos</h1>
-            <Footer/>
-        </>
-        )
+export const router = createBrowserRouter([
+  {
+    element:<HeaderFooterLayout/>,
+    errorElement:<h1>404 not found</h1>,
+    children:[
+        {
+          path:"/",
+          element: <App/>
+        },
+        {
+          path:"/flat",
+          element:<h1>Nos apartements</h1>
+          
+        },
+        {
+            path:"/about",
+            element:<h1>À propos</h1>
+          },
+        ],
     },
 ]
 )
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
