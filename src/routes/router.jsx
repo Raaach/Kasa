@@ -5,7 +5,7 @@ import Footer from "../layout/Footer.jsx"
 import Navbar from "../components/Navbar.jsx";
 import Main from '../layout/Main.jsx';
 
-const HeaderFooterLayout =() =>{ //ici nous avons créé un model pour chaque pages
+const HeaderFooterLayout =() =>{ //ici nous avons créé un model pour chaque pages, graçe à Outlet
   return<>  
     <Navbar/>
     <Main>
