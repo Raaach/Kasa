@@ -1,9 +1,11 @@
+@use"../scss/variables.scss"as *;
+
 .navbar{
     display: flex;
     gap: 2rem;
     align-items: center;
     padding: 0 2rem;
-    color: #ff6060;
+    color: $color-primary;
     font-weight: 700;
     
     & >*:first-child{ /* >* veut dire mon enfant direct */
@@ -12,7 +14,7 @@
 
     & a{
         text-decoration: none;
-        color: #ff6060;
+        color: $color-primary;
         &.active{
             text-decoration: underline;
         }
