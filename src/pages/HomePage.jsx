@@ -1,7 +1,7 @@
 import React from 'react';
 import "./HomePage.scss"
-import Banner from './layout/Banner.jsx';
-import AppartGrid from './components/AppartGrid.jsx';
+import Banner from '../layout/Banner.jsx';
+import AppartGrid from '../components/AppartGrid.jsx';
 
 function HomePage() {
   return (

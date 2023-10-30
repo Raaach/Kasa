@@ -1,6 +1,7 @@
 import React from 'react'
 import {createBrowserRouter, Outlet} from "react-router-dom"
-import HomePage from '../HomePage.jsx'
+import HomePage from '../pages/HomePage.jsx'
+import ApartmentPage from '../pages/ApartmentPage.jsx'
 import Footer from "../layout/Footer.jsx"
 import Navbar from "../components/Navbar.jsx";
 import Main from '../layout/Main.jsx';
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
         },
         {
           path:"/flat",
-          element:<h1>Nos apartements</h1>
+          element:<ApartmentPage/>
           
         },
         {
