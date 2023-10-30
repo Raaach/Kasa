@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar.jsx';
-import "./App.css"
+import "./App.scss"
 import Banner from './components/Banner.jsx';
 import AppartGrid from './components/AppartGrid.jsx';
 import Main from './components/Main.jsx';

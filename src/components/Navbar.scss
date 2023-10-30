@@ -15,10 +15,7 @@
     & a{
         text-decoration: none;
         color: $color-primary;
-        &.active{
-            text-decoration: underline;
-        }
-        &:hover{
+        &.active, &:hover{
             text-decoration: underline;
         }
     }

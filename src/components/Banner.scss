@@ -1,3 +1,5 @@
+@use"../scss/variables.scss" as *;
+
 .banner{
     position: relative;
     background-position: center;
@@ -11,7 +13,7 @@
     border-radius: 2rem;
     display: grid;
     place-items: center;
-    color: white;
+    color: $color-tertiary;
     font-weight: 400;
     margin-bottom: 2rem;
 }
