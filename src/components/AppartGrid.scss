@@ -1,13 +1,13 @@
 @use "../scss/variables.scss" as colors;
 
 .grid{
-    background-color: colors.$grid-background-dark;
+    background-color: colors.$background-dark;
     min-height: 45vh;
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0.2rem;
+    padding: 1.2rem;
     justify-content: space-between;
 
 }
