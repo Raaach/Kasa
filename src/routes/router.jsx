@@ -5,6 +5,7 @@ import ApartmentPage from '../pages/ApartmentPage.jsx'
 import Footer from "../layout/Footer.jsx"
 import Navbar from "../components/Navbar.jsx";
 import Main from '../layout/Main.jsx';
+import About from '../pages/About.jsx'
 
 const HeaderFooterLayout =() =>{ //ici nous avons créé un model pour chaque pages, graçe à Outlet
   return<>  
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
         },
         {
             path:"/about",
-            element:<h1>À propos</h1>
+            element:<About/>
           },
         ],
     },
