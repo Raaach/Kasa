@@ -9,6 +9,10 @@
     gap: 1rem;
     padding: 1.2rem;
     justify-content: space-between;
+    &>*{
+        width:100%;
+        max-width: 20rem;
+    }
 
 }
 
