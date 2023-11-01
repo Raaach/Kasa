@@ -26,8 +26,10 @@ function ApartmentPage() {
            <ImageBanner imageUrl={flat.cover}/>
            <ApartmentHeader flat={flat}/>
             <div className='apartment__description__area'>
-                <DescriptionPanel/>
-                <DescriptionPanel/>
+                <DescriptionPanel title="Description" content={flat.description}/>
+                <DescriptionPanel title="Équipments" content={flat.equipments.map((ekipnt)=>(
+                    <li>{ekipnt}</li>
+                ))}/>
             </div>
         </div>
     )
