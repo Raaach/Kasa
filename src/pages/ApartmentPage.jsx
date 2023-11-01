@@ -23,7 +23,6 @@ function ApartmentPage() {
     if(flat == null) return <div>...Loading</div>
     return (
         <div className='apartment-page'>
-         flat= {JSON.stringify(flat)}
            <ImageBanner imageUrl={flat.cover}/>
            <ApartmentHeader flat={flat}/>
             <div className='apartment__description__area'>

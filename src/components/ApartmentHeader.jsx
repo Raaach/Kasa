@@ -4,7 +4,7 @@ import "./ApartmentHeader.scss"
 export function ApartmentHeader(props) {
 
     const {flat} = props
-    const name= flat.host.name
+    const {name}= flat.host
     const[firstName, lastName] = name.split(" ")
 
   return (
@@ -29,11 +29,9 @@ export function ApartmentHeader(props) {
             </div>
         </div>
         <div className='apartment__owner__stars'>
-            <span className='on'>  ★  </span>
-            <span className='on'>  ★  </span>
-            <span className='on'>  ★  </span>
-            <span className='off'>  ★  </span>
-            <span className='off'>  ★  </span>
+        {[1, 2, 3, 4, 5].map((number)=>(      
+                <span className={props.flat.rating >= number?"on":""}>★</span>      
+        ))}
         </div>
     </div>
 </div>
