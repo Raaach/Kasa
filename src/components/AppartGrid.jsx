@@ -17,7 +17,8 @@
    return (
     <div className='grid'>
       {apartments.map((apartment)=>(
-        <ApartmentCard title={apartment.title} imageUrl= {apartment.cover}/>  //apartment est un gros objet qui contient title, tags etc... //on fait appelle cette ligne pour avoir plusieur apartement au lieu de tout écrire à la main chaque div 
+        <ApartmentCard title={apartment.title} imageUrl= {apartment.cover} id={apartment.id}/>  
+        //apartment est un gros objet qui contient title, image, id etc... //on fait appelle cette ligne pour avoir plusieur apartement au lieu de tout écrire à la main chaque div 
       ))}
     </div>
    )
