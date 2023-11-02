@@ -7,12 +7,12 @@ import { ImageBanner } from '../components/ImageBanner'
 export default function About() {
   return (
     <>
-        <ImageBanner/>
+        <ImageBanner />
         <div className="about__container">    
-            <DescriptionPanel/>
-            <DescriptionPanel/>
-            <DescriptionPanel/>
-            <DescriptionPanel/>
+            <DescriptionPanel title="Fiabilité" content="ça peut vous être utile"/>
+            <DescriptionPanel title="Respect" content="ça peut vous être utile"/>
+            <DescriptionPanel title="Service" content="ça peut vous être utile"/>
+            <DescriptionPanel title="Responsabilité" content="ça peut vous être utile"/>
         </div>
     </>
   )
