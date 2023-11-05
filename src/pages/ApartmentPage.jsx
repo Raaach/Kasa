@@ -23,12 +23,12 @@ function ApartmentPage() {
     if(flat == null) return <div>...Loading</div>
     return (
         <div className='apartment-page'>
-           <ImageBanner imageUrl={flat.cover}/>
+           <ImageBanner pictures={flat.pictures}/>
            <ApartmentHeader flat={flat}/>
             <div className='apartment__description__area'>
                 <DescriptionPanel title="Description" content={flat.description}/>
-                <DescriptionPanel title="Équipments" content={flat.equipments.map((ekipnt)=>(
-                    <li>{ekipnt}</li>
+                <DescriptionPanel title="Équipments" content={flat.equipments.map((ekipnt,i)=>(
+                    <li key={i}>{ekipnt}</li>
                 ))}/>
             </div>
         </div>
