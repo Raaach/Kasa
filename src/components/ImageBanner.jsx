@@ -15,18 +15,41 @@ export function ImageBanner(props) {
     setCurrentPicture((curentPicture+1)%pictures.length) //modulo qui permet de ne pas dépasser une certaine valeur, ici c'est la length
   }
   const moveToPrevious=()=>{
-    setCurrentPicture((curentPicture-1)%pictures.length) //modulo qui permet de ne pas dépasser une certaine valeur, ici c'est la length
+    const newCurentPicture = curentPicture - 1
+    if (newCurentPicture <0){
+      setCurrentPicture(pictures.length-1) 
+      return
+    }
+    setCurrentPicture((curentPicture-1))
   }
+
+  const areTherePictures = () =>{
+    return pictures && pictures.length > 0
+  }
+
+  const getCarouselOrDefaultImg = () => {
+    if (!areTherePictures()){
+      return <img src="https://picsum.photos/seed/picsum/800" className="show" alt=''/>
+    }
+    return pictures.map((pic, i)=>(
+      <img key={pic} src={pic} alt='' className={getClassName(i)}></img>
+      ))
+    }
+  
 
   return (
     <div className='image__banner'>
-      <button onClick={moveToNext}>Next</button>
-      <div className='image__container'>
-          {pictures.map((pic, i)=>(
-            <img key={pic} src={pic} alt='' className={getClassName(i)}></img>
-            ))}
-            </div>
-      <button onClick={moveToPrevious}>Previous</button>
+      <div className='image__container'>{getCarouselOrDefaultImg()}</div>
+      {areTherePictures() && 
+      <>
+        <button className="btn btn_next" onClick={moveToNext}>
+          <i className="fas fa-chevron-left">
+          </i>
+        </button>
+        <button className="btn btn_previous" onClick={moveToPrevious}>
+          <i className="fas fa-chevron-right"></i>
+        </button>
+      </>}
     </div>
-  )
+  ) 
 }

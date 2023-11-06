@@ -1,5 +1,29 @@
+@use "../scss/variables.scss" as *;
+
 .image__banner{
+    position: relative;
     margin-bottom: 2rem;
+    .btn {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        width: 5rem;
+        background-color: transparent;
+        color: $color-tertiary;
+        font-size: 3rem;
+        border-width: 0;
+        cursor: pointer;
+        &:active,
+        &:focus{
+            outline: none;
+        } /*ça permet de pas avoir te contour */
+        &.btn_next{
+            left: 0
+        }
+        &.btn_previous{
+            right: 0;
+        }
+    }
     .image__container{
         position: relative;
         height: 20rem;
