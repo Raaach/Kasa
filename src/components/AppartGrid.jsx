@@ -6,18 +6,24 @@
  function AppartGrid() {
   const [apartments, setApartments]= useState([])
 
-  useEffect(fetchApartments,[]) // useEffect avec array wide = excute seulement au chargement 
+  useEffect(() =>{
+    const abortController = new AbortController() // ce controleur me permet de controler la requete fetch
 
-  function fetchApartments(){
-    fetch("db.json")            //on a utilisé fetch pour faire aparaitre les infos en json/se n'est pas le même res 
-      .then((res) => res.json()) 
-      .then((res)=>setApartments(res)) 
-      .catch((err) => console.error(err))
-  }
+    fetch("db.json", {signal: abortController.signal})            //on a utilisé fetch pour faire aparaitre les infos en json/se n'est pas le même res 
+    .then((res) => res.json()) 
+    .then((res)=>setApartments(res)) 
+    .catch((err) => console.error(err))
+
+    return() =>{
+      abortController.abort() // ici ce controller l'arrete
+    }// c'est la fonction cleanUp en fait on arrete la requete fetch quand le client passe à une autre page
+  },[]) // useEffect avec array vide = excute seulement au chargement 
+
+
    return (
     <div className='grid'>
       {apartments.map((apartment)=>(
-        <ApartmentCard title={apartment.title} imageUrl= {apartment.cover} id={apartment.id}/>  
+        <ApartmentCard title={apartment.title} imageUrl= {apartment.cover} id={apartment.id} key={apartment.id}/>  
         //apartment est un gros objet qui contient title, image, id etc... //on fait appelle cette ligne pour avoir plusieur apartement au lieu de tout écrire à la main chaque div 
       ))}
     </div>
