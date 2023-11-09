@@ -43,11 +43,14 @@ export function ImageBanner(props) {
       {areTherePictures() && 
       <>
         <button className="btn btn_next" onClick={moveToNext}>
-          <i className="fas fa-chevron-left">
+          <i className="fas fa-chevron-right">
           </i>
         </button>
+        <span className='counter__slide'>
+          {curentPicture + 1} / {pictures.length}
+          </span>
         <button className="btn btn_previous" onClick={moveToPrevious}>
-          <i className="fas fa-chevron-right"></i>
+          <i className="fas fa-chevron-left"></i>
         </button>
       </>}
     </div>

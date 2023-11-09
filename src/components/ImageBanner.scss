@@ -17,14 +17,23 @@
         &:focus{
             outline: none;
         } /*ça permet de pas avoir te contour */
-        &.btn_next{
+        &.btn_previous{
             left: 0
         }
-        &.btn_previous{
+        &.btn_next{
             right: 0;
         }
     }
+    .counter__slide{
+        position: absolute;
+        width: 100%;
+        color: $color-tertiary;
+        border-radius: 0 0 0 1rem;
+        text-align: center;
+        bottom: 1rem;
+    }
     .image__container{
+        width: 100%;
         position: relative;
         height: 20rem;
         img{
