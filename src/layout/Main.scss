@@ -4,4 +4,7 @@
     @media screen and (width <= 768px) {
         padding: 1rem;
     }
+    @media screen and (width <= 2560px) {
+        max-width: 1440px;
+    }
 }
