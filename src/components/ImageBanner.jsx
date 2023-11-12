@@ -29,7 +29,7 @@ export function ImageBanner(props) {
 
   const getCarouselOrDefaultImg = () => {
     if (!areTherePictures()){
-      return <img src="https://picsum.photos/seed/picsum/800" className="show" alt=''/>
+      return <img src="/logo__about.png" className="show" alt=''/>
     }
     return pictures.map((pic, i)=>(
       <img key={pic} src={pic} alt='' className={getClassName(i)}></img>
