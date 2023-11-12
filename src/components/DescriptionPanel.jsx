@@ -11,7 +11,7 @@ export function DescriptionPanel(props){
     const classChevron = (isContentIsVisible ? "fas fa-chevron-up" : "fas fa-chevron-down");
 
     return(
-            <div className='descritpion__panel'> 
+            <div className='description__panel'> 
             <p className='description__header'onClick={showContent}>
                 <span>{props.title}</span>
                 <i className={classChevron}></i>

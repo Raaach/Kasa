@@ -422,16 +422,16 @@
 		"location": "Ile de France - Arnouville",
 		"equipments": [
 			"SDB",
-			"Cuisine Ã©quipÃ©e",
+			"Cuisine équipée",
 			"Frigo",
 			"Bouilloire",
 			"WIFI",
 			"télévision",
 			"Cintres",
-			"Ã‰quipements de base"
+			"Équipements de base"
 		],
 		"tags": [
-			"ForÃªt",
+			"Forêt",
 			"Nature",
 			"Grande maison"
 		]
@@ -483,7 +483,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-5.jpg"
 		],
-		"description": "Si vous Ãªtes Ã  la recherche de l'endroit idÃ©al pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idÃ©al. En plein coeur de la DÃ©fense, il dispose Ã©galement de tous les Ã©quipements pour que vous soyez comme chez vous.",
+		"description": "Si vous êtes à la recherche de l'endroit idéal pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idéal. En plein coeur de la Défense, il dispose Ã©galement de tous les Ã©quipements pour que vous soyez comme chez vous.",
 		"host": {
 			"name": "Julie Donatella",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
@@ -491,7 +491,7 @@
 		"rating": "3",
 		"location": "Ile de France - La DÃ©fense",
 		"equipments": [
-			"Baie vitrÃ©e",
+			"Baie vitrée",
 			"télévision",
 			"Four",
 			"Frigo",
@@ -500,7 +500,7 @@
 			"Parking"
 		],
 		"tags": [
-			"La DÃ©fense",
+			"La Défense",
 			"Loft",
 			"Luxe"
 		]
@@ -516,7 +516,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-5.jpg"
 		],
-		"description": "Ce charmant appartement offre des prestations de luxe, aux portes de Paris. Ã€ deux pas de la ligne 3, vous pourrez accÃ©der Ã  toutes les attractions touristiques dont vous avez toujours rÃªvÃ©es.",
+		"description": "Ce charmant appartement offre des prestations de luxe, aux portes de Paris. À deux pas de la ligne 3, vous pourrez accÃ©der Ã  toutes les attractions touristiques dont vous avez toujours rêvées.",
 		"host": {
 			"name": "Julie Donatella",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
@@ -543,7 +543,7 @@
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg"
 		],
-		"description": "Cette chambre dispose de toutes les facilitÃ©s nÃ©cessaires. Proche mÃ©tro et commerces.",
+		"description": "Cette chambre dispose de toutes les facilités nécessaires. Proche métro et commerces.",
 		"host": {
 			"name": "Hugo Perrier",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
@@ -557,7 +557,7 @@
 		],
 		"tags": [
 			"Vue Parc",
-			"MÃ©tros"
+			"Métros"
 		]
 	},
 	{
@@ -569,7 +569,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-3.jpg"
 		],
-		"description": "Ce studio dÃ©corÃ© avec goÃ»t sera votre nid douillet aprÃ¨s une longue journÃ©e passÃ©e Ã  dÃ©couvrir Paris.",
+		"description": "Ce studio décoré avec goÃ»t sera votre nid douillet après une longue journÃ©e passée à découvrir Paris.",
 		"host": {
 			"name": "Michel Romy",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-11.jpg"
@@ -596,7 +596,7 @@
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
 		],
-		"description": "Au coeur du quartier historique du Marais, cet appartement est idÃ©al pour un couple Ã  la dÃ©couverte de Paris. SituÃ© sur la rue de Rivoli, il est Ã  5 minutes du Louvre.",
+		"description": "Au coeur du quartier historique du Marais, cet appartement est idéal pour un couple à la découverte de Paris. Situé sur la rue de Rivoli, il est Ã  5 minutes du Louvre.",
 		"host": {
 			"name": "Nathalie Jean",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
@@ -605,7 +605,7 @@
 		"location": "Ile de France - Paris 13e",
 		"equipments": [
 			"Wi-fi",
-			"Ã‰quipements de base",
+			"Équipements de base",
 			"Micro-Ondes",
 			"Frigo",
 			"Baignoire"
