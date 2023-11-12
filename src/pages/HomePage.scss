@@ -8,5 +8,7 @@ body{
     margin: auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    /*max-width: 2560px; avec @media*/
+    @media screen and (min-width: 2560px){
+        margin: 3% auto;
+    }
 }
