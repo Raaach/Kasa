@@ -40,7 +40,7 @@ export function ImageBanner(props) {
   return (
     <div className='image__banner'>
       <div className='image__container'>{getCarouselOrDefaultImg()}</div>
-      {areTherePictures() && 
+      {areTherePictures() && pictures.length > 1 &&(
       <>
         <button className="btn btn_next" onClick={moveToNext}>
           <i className="fas fa-chevron-right">
@@ -49,10 +49,11 @@ export function ImageBanner(props) {
         <span className='counter__slide'>
           {curentPicture + 1} / {pictures.length}
           </span>
+          
         <button className="btn btn_previous" onClick={moveToPrevious}>
           <i className="fas fa-chevron-left"></i>
         </button>
-      </>}
+      </>)}
     </div>
   ) 
 }
