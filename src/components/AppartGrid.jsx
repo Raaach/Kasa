@@ -4,7 +4,7 @@
 
  
  function AppartGrid() {
-  const [apartments, setApartments]= useState([])
+  const [apartments, setApartments]= useState([])// Utilisation de l'état local pour stocker la liste des appartements
 
   useEffect(() =>{
     const abortController = new AbortController() // ce controleur me permet de controler la requete fetch
@@ -17,8 +17,8 @@
     return() =>{
       abortController.abort() // ici ce controller l'arrete
     }// c'est la fonction cleanUp en fait on arrete la requete fetch quand le client passe à une autre page
-  },[]) // useEffect avec array vide = excute seulement au chargement 
-
+  },[]) // useEffect avec array vide = excute seulement au chargement initial
+  // La fonction de nettoyage dans useEffect sert à annuler la requête si le composant est démonté avant que la requête ne soit terminée.
 
    return (
     <div className='grid'>

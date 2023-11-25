@@ -1,9 +1,9 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React from 'react' // de la bibliothèque react
+import {Link} from "react-router-dom"// bibliotheque react-router-dom
 import "./ApartmentCard.scss"
 
 function ApartmentCard(props) {
-  //on récupère l'id
+  //on récupère l'id à partir des props
   const state ={
       apartmentId:props.id
     }
@@ -16,6 +16,6 @@ function ApartmentCard(props) {
       </div>
     </Link>
   )
-}
+}// on ferme le composant ApartmentCard
 
 export default ApartmentCard
